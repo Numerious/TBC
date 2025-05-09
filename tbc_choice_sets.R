@@ -270,7 +270,7 @@ tbc_choice_sets <- function(df, number_of_tasks, total_items, number_of_items_sh
     choice_set_i <- 1
     for (j in ptasks) {
       fr <- df[i, paste0(first_response_prefix, "_", 1:total_items, ".", j)]
-      dr <- df[i, paste0(dual_response_prefix,".", j)]
+      dr <- df[i, paste0(dual_response_prefix,".", j), drop=T]
       win <- which(fr %in% 1)
       lose <- which(fr %in% 0)
       combos <- defcombs[which(defcounts %in% length(win)), ]
