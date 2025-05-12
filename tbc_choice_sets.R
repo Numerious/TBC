@@ -172,7 +172,7 @@ test_tbc_data <- function(n, number_of_tasks, total_items, number_of_items_shown
 #' Columns should follow the pattern: `<prefix>.<task number>`, e.g., `TBCDR.3`.
 #' @param allocation A numeric vector mapping dual response codes (integers) 
 #' to the probability of choosing the "none" option. For example, `allocation = c(0, 0, 0, 0.3, 0.7)`
-#' means code 4 maps to 30% none, and code 5 maps to 70% none.
+#' means code 4 maps to 30% non-none, and code 5 maps to 70% non-none.
 #' @param exclude_task Optional integer vector indicating task numbers to skip when generating choice sets.
 #'
 #' @return A long-format data frame with one row per alternative per choice set. 
