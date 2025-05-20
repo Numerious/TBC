@@ -1,5 +1,5 @@
 # ==============================================================================
-# Title: Token-Based Conjoint (TBC) Utilities
+# Title: Token-Based Conjoint (TBC) Design
 # Author: Numerious Inc.
 # Description: 
 #   This script provides helper functions for working with Token-Based Conjoint
@@ -12,7 +12,7 @@
 #   These functions can be used for testing and preparing TBC experiments,
 #   especially when integrating forced choice and dual response formats.
 #
-# Repository: https://github.com/<your-username>/<repo-name>
+# Repository: https://github.com/Numerious/TBC
 # License: MIT
 #
 # Version: 1.0.0
@@ -201,7 +201,6 @@ test_tbc_data <- function(n, number_of_tasks, total_items, number_of_items_shown
 #' }
 #'
 #' @export
-
 tbc_choice_sets <- function(df, number_of_tasks, total_items, number_of_items_shown,
                        uid_colname="sys_RespNum", 
                        first_response_prefix="TBC",
